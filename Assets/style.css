@@ -1,0 +1,87 @@
+:root {
+  --dark: rgb(71, 67, 67);
+  --purple: rgb(201, 19, 201);
+  --white: rgb(228, 222, 222);
+  --red: rgb(228, 0, 0);
+  --blue: rgb(0,0,228);
+}
+
+body {
+  background-color: var(--white);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--blue);
+}
+
+header p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--dark);
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+.card {
+  border: 5px var(--dark) dashed;
+  color: var(--blue);
+  flex: 1 1 300px;
+  padding: 0 15px 15px;
+  margin: 0 50px 40px;
+}
+
+.card h2 {
+  border: solid 3px var(--dark);
+  border-radius: 5px;
+  position: relative;
+  top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  background-color: var(--white);
+  text-align: center;
+}
+
+.card p {
+  margin-bottom: 30px;
+}
+
+.card pre {
+  color: var(--white);
+  padding: 10px;
+  background: linear-gradient(180deg, var(--blue), var(--white));
+  white-space: pre-wrap;
+}
+
+.card,
+.card h2 {
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover,
+.card:hover h2 {
+  box-shadow: inset 0px 0px 8px var(--red), 0 0 15px var(--red);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 200px;
+  padding: 0 15px 15px;
+  margin-top: 25px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
